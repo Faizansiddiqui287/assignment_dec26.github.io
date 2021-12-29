@@ -1,0 +1,252 @@
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* -----------------CSS for navbar---------------------------------------------------- */
+.navbar{
+    border-bottom: 1px solid rgb(177, 175, 175);
+    height: 60px;
+    width: 100%;
+    display: flex;
+
+}
+
+#nav_img{
+    height: 45px;
+    width: 45px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+h1{
+    margin-left: 10px;
+    margin-top: 15px;
+    color: rgb(87, 87, 87);
+}
+
+.search_box{
+    margin-top: 7px;
+    margin-left: 150px;
+    border: 1px solid rgb(230, 230, 230);
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    height: 45px;
+    width: 700px;
+}
+
+.search_box::placeholder{
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+#question{
+    margin-top: 20px;
+    margin-left: 150px;
+    height: 20px;
+    width: 20px;
+}
+#setting{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 20px;
+    width: 20px;
+}
+#grid_icon{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 20px;
+    width: 20px;
+}
+#profile{
+    margin-top: 12px;
+    border-radius: 50%;
+    margin-left: 30px;
+    height: 40px;
+    width: 40px;
+}
+
+.main_container{
+    display: flex;
+    height: 535px;
+    width: 100%;
+}
+
+.aside_left{
+    height: 100%;
+    width: 240px;
+
+
+}
+
+.container{
+    height: 100%;
+    width: 78%;
+    overflow: scroll;
+}
+
+.aside_right{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 47px;
+}
+
+.sub_div{
+    border-bottom: 1px solid rgb(177, 175, 175);
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+.sub_div > h3{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/*------------------------ Button for flex to grid  ------------------------------------------------------------------------------*/
+#btn1{
+    margin-left: 70%;
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    box-shadow: -1px 1px 13px 6px rgba(110,110,110,1);
+-webkit-box-shadow: -1px 1px 13px 6px rgba(110,110,110,1);
+-moz-box-shadow: -1px 1px 13px 6px rgba(110,110,110,1);
+}
+
+
+#btn2{
+    margin-left: 5%;
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    box-shadow: -1px 1px 13px 6px rgba(110,110,110,1);
+-webkit-box-shadow: -1px 1px 13px 6px rgba(110,110,110,1);
+-moz-box-shadow: -1px 1px 13px 6px rgba(110,110,110,1);
+}
+
+#btn1, #btn2:hover{
+    cursor: pointer;
+}
+
+.sub_div{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+
+/*--------------------------------- Flex box container ------------------------------------- */
+.sub_div1{
+    display: flex;
+    
+}
+/* ---------------Boxes with images--------------------------------------------------------------------------- */
+.card {
+    background-color: white;
+    margin: 10px;
+    height: 170px;
+    width: 220px;
+    border: 1px solid #ABABAB;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    transition: all 0.25s linear;
+    cursor: pointer;
+}
+
+.card>img{
+    height: 150px;
+    width: 200px;
+}
+.card>h5{
+    margin: 0;
+}
+
+.card:hover {
+    box-shadow: -1px 10px 30px 0px rgba(105, 90, 166, 0.75);
+}
+
+
+/* -----------------CSS for aside right content------------------------------------------- */
+
+.aside_right{
+    display: block;
+}
+
+.aside_right>p{
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+
+.emo{
+    margin-top: 188px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+     grid-auto-rows: repeat(3, 1fr);
+    display: none;
+}
+
+.grid_line{
+    border-bottom: 1px solid black;
+    margin: 30px;
+}
+
+.display_none{
+    display: none;
+}
+.display_show{
+    display: initial;
+}
+
+
+
+#new{
+    margin-top: 30px;
+    margin-left: 10px ;
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-color: #ffffff;
+    font-size: larger;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: -1px 1px 13px 6px rgba(110,110,110,1);
+-webkit-box-shadow: -1px 1px 13px 6px rgba(110,110,110,1);
+-moz-box-shadow: -1px 1px 13px 6px rgba(110,110,110,1);
+}
+.btn_aside{
+    margin: 2px;
+    display: block;
+    color: blue;
+    border: none;
+    border-top-right-radius: 30px 20px;
+    border-bottom-right-radius: 30px 20px;
+    width: 230px;
+    height: 50px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.btn_aside:hover{
+    cursor: pointer;
+    background-color: rgb(242, 242, 246);
+}
+.ic{
+    display: inline;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.clr{
+    color: black;
+}
+.color{
+    color: black;
+}
+
+
